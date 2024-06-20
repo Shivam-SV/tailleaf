@@ -20,7 +20,25 @@ function buttons(colors){
                     backgroundColor: color.replace('<alpha-values>', 0.9),
                 },
                 "&:focus": {
-                    border: `2px solid ${color.replace('<alpha-values', 0.2)}`
+                    outline: `5px solid ${color.replace('<alpha-values>', 0.2)}`
+                },
+                "&:disabled": {
+                    backgroundColor: color.replace('<alpha-values>', 0.6),
+                }
+            },
+            [`.btn-${colorName}-outlined`]: {
+                border: `2px solid ${color.replace('<alpha-values>', 1)}`,
+                color: color.replace('<alpha-values>', 1),
+                "&:hover": {
+                    border: `2px solid ${color.replace('<alpha-values>', 0.9)}`,
+                    color: color.replace('<alpha-values>', 0.9),
+                },
+                "&:focus": {
+                    outline: `5px solid ${color.replace('<alpha-values>', 0.2)}`
+                },
+                "&:disabled": {
+                    border: `2px solid ${color.replace('<alpha-values>', 0.6)}`,
+                    color: color.replace('<alpha-values>', 0.6),
                 }
             },
         }
