@@ -49,7 +49,12 @@ function buttons(colors){
         ...baseStyles,
         ...generator('primary'),
         ...generator('secondary'),
-        ...generator('tertiary')
+        ...generator('tertiary'),
+        ...generator('base'),
+        ...generator('info'),
+        ...generator('warning'),
+        ...generator('success'),
+        ...generator('danger'),
 
     }
 }
